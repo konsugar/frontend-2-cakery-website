@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #FFF9F6;
+	color: #333;
+	line-height: 1.6;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+/* header & nav */
+
+header {
+	background-color: #FFFFFF;
+	/* border-bottom: 2px solid #F4C2C2; */
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.logo {
+	height: 100px;
+    margin-right: 3rem;
+}
+
+
+nav {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1rem 2rem;
+	/* flex-wrap: wrap; */
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+	/* flex-wrap: wrap; */
+	justify-content: flex-start;
+}
+
+nav a {
+	text-decoration: none;
+	color: #8C5C4A;
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: #6AB89C;
+}
+
+/* main */
+
+main {
+	padding: 2rem;
+}
+
+h1, h2, h3 {
+	color: #8C5C4A;
+	margin-bottom: 0.5rem;
+}
+
+section {
+	margin-bottom: 3rem;
+}
+
+.products h1 {
+	text-align: center;
+	margin-bottom: 1.5rem;
+	font-size: 2rem;
+}
+
+/* products */
+
+.product-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1.5rem;
+}
+
+.product {
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	text-align: center;
+	padding: 1rem;
+	/* transition: transform 0.2s ease, box-shadow 0.3s ease; */
+}
+
+.product:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.product img {
+	width: 100%;
+	border-radius: 4px;
+	margin-bottom: 0.8rem;
+}
+
+.product h3 {
+	font-size: 1.1rem;
+	margin-bottom: 0.3rem;
+}
+
+.product p {
+	color: #6AB89C;
+	font-weight: 600;
+}
+
+/* .cupcakes {
+	background-color: #FFF9F6;
+} */
+
+.wedding-cakes {
+	background-color: #FFEDF2;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+/* footer */
+
+footer {
+	background-color: #FFEDF2;
+	text-align: center;
+	padding: 1rem;
+	/* border-top: 2px solid #F4C2C2; */
+}
+
+footer ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	/* margin-top: 0.5rem; */
+	flex-wrap: wrap;
+}
+
+footer a {
+	text-decoration: none;
+	color: #8C5C4A;
+	font-weight: 500;
+}
+
+footer a:hover {
+	color: #6AB89C;
+}
+
+/* responsive */
+
+@media (max-width: 600px) {
+    .logo {
+		display: block;
+		margin: 0 auto 1rem auto;
+	}
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
+	nav ul {
+		flex-direction: column;
+		gap: 1rem;
+        align-items: center;
+	}
+    nav li {
+		list-style: none;
+		text-align: center;
+	}
+	main {
+		padding: 1rem;
+	}
+	.products h1 {
+		font-size: 1.6rem;
+	}
+}
